@@ -35,7 +35,7 @@ int main1::loop1(){
 	int lastk = 1;
 	for (int k = 1; k <= attsize; k++) {
 		//std::cout << genattached[k] << std::endl;
-		spawn = rand() % 10;
+		spawn = rand() % genattached[k] + 1;
 		if (genattached[lastk] == spawn) {
 			
 			std::cout << attachedword[k] << std::endl;
@@ -46,6 +46,7 @@ int main1::loop1(){
 			std::cout << attachedword[lastk] << std::endl;
 			
 		}
+		
 		
 		lastk = k;
 	}
